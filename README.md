@@ -1,4 +1,4 @@
-2D Platformer (Godot)
+2D Platformer (The_Hero)
 
 A 2D platformer built in Godot with dynamic level elements: coin collection, patrolling enemies, a roll power-up, a checkpoint-triggered moving platform, kill zones, and a win/lose UI flow.
 
@@ -76,8 +76,12 @@ Project Structure Notes
 UI-related nodes are expected at fixed paths (e.g. Game/UI accessed via get_tree().root.get_node(...)), so the root scene should be named Game with a child UI node running the ui.gd script.
 game_manager.gd is referenced via the unique name %game_manager, so its node should be marked as a scene-unique node in the editor.
 .uid files are Godot's internal resource identifiers for each script and don't need to be edited manually.
+
+
 Requirements
 Godot 4.x (uses typed GDScript syntax such as body: Node2D, @onready, and unique-name % references).
+
+
 Known Limitations / Possible Improvements
 Coin target ("of 10 coins") is hardcoded in the scoreboard text rather than driven by a level-defined total.
 No checkpoint/save system — death or restart reloads the entire scene.
